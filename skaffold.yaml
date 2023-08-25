@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2beta5
+kind: Config
+metadata:
+  name: vul-enforcer
+build:
+  artifacts:
+  - image: vul-enforcer
+  local:
+    useBuildkit: true
+deploy:
+  kustomize:
+    paths:
+    - config/default

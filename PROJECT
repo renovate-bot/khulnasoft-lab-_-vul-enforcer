@@ -1,0 +1,7 @@
+domain: github.io
+repo: github.com/khulnasoft-lab/vul-enforcer
+resources:
+- group: khulnasoft-lab
+  kind: ImageVulnerability
+  version: v1alpha1
+version: "2"
